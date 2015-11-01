@@ -1,0 +1,23 @@
+[
+	{
+		"nameZh": "七星山主峰",
+		"lat": 25.1707868,
+		"lng": 121.5527683,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D106.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D106.htm",
+			"week":[],
+			"hour":[]
+		}
+	},{
+		"nameZh": "玉山北峰",
+		"lat": 23.4874,
+		"lng": 120.9597,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D026.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D026.htm",
+			"week":[],
+			"hour":[]
+		}
+	}	
+]
