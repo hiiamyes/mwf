@@ -14,8 +14,11 @@ app.use express.static(__dirname + '/')
 
 # routing
 app.get '/', (req, res) ->
-	# parser
 	res.render 'index'
+
+# crawler
+crawler = require './hut/scripts/crawler.js'
+crawler.crawl MongoClient, mongoServerUrl, collectionName
 
 # api
 forecastSchema = mongoose.Schema({
