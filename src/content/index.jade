@@ -15,9 +15,12 @@ html
 		script(src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js')
 		link(href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet')
 
+		//- basic style
+		link(href='src/content/index.css' rel='stylesheet')
+
 		//- react
 		script(src="node_modules/react/dist/react.js")
 		
 	body
 		#content
-		script(src='app/view/bundle-frontend.js')
+		script(src='build/app.js')
