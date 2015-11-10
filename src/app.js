@@ -1,47 +1,49 @@
-React = require 'react'
-ReactDOM = require 'react-dom'
-Map = require './Map'
-Forecast = require './Forecast'
-$ = require 'jquery'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Map from './component/Map';
+import Forecast from './component/Forecast';
+import $ from 'jquery';
 
-require '../stylesheets/index.sass'
+var styles = { 	
+	basic: {
+		backgroundColor: 'black',
+		width: '100%',
+		height: '100%',
+	}
+}
 
-styles = 
-	basic:
-		backgroundColor: 'black'
-		width: '100%'
-		height: '100%'
-
-
-Container = React.createClass(
-	getInitialState: ->
-		return {
-			mountains: []
+class Container extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			mountains: [],
 			mountain: {}
-		}
-	,
+		};
+		this.mountainClick = this.mountainClick.bind(this);
+	}
 
-	componentDidMount: ->
-		$.get '/api/mountains', ((result) ->
+	componentDidMount() {
+		$.get('/api/mountains', result => {
 			this.setState({
 				mountains: result
-			})
-		).bind(this)
-	,
+			});
+		})
+	}
 
-	mountainClick: (index) ->
-		this.setState(
+	mountainClick(index) {
+		this.setState({
 			mountain: this.state.mountains[index]
-		)
-	,
-
-	render: ->
+		});
+	}
+	
+	render() {
 		return (
 			<div style={styles.basic} className='container'>
-				<Map mountains={this.state.mountains} mountainClick={this.mountainClick}/>
+				<Map mountains={this.state.mountains} mountainClick={this.mountainClick}/>				
 				<Forecast mountain={this.state.mountain}/>
 			</div>
-		)
-)
+		);
+	}
+}
 
-ReactDOM.render <Container />, document.getElementById('content')
+ReactDOM.render(<Container />, document.getElementById('content'));

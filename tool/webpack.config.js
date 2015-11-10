@@ -1,17 +1,17 @@
 module.exports = {
-    entry: './app/view/entry-frontend.cjsx',
+    entry: '../src/app.js',
     output: {
-        filename: './app/view/bundle-frontend.js'
+        filename: '../build/app.js'
     },
     module: {
         loaders: [
             {
-                test: /\.cjsx$/,
-                loader: 'coffee-jsx-loader'
-            },
-            {
-                test: /\.sass$/,
-                loader: 'style!css!sass?indentedSyntax'
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                loader: 'babel',
+                query: {
+                    presets: ['react','es2015']
+                }
             }
         ]
     },
@@ -19,6 +19,6 @@ module.exports = {
         'react': 'React'
     },
     resolve: {
-        extensions: ['', '.js', '.cjsx', '.sass']
+        extensions: ['', '.js']
     }
 }
