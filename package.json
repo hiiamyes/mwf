@@ -1,6 +1,6 @@
 {
   "name": "mwf",
-  "version": "0.3",
+  "version": "0.3.0",
   "description": "Mountain Weather Forecast",
   "main": "index.js",
   "author": "yes",
