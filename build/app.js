@@ -19010,7 +19010,7 @@
 											_react2.default.createElement(
 												'th',
 												{ colSpan: 3 },
-												(0, _moment2.default)(forecastOneDay[0].time).format('MM/DD')
+												_moment2.default.utc(forecastOneDay[0].time).format('MM/DD')
 											)
 										),
 										_react2.default.createElement(
@@ -19043,7 +19043,7 @@
 												_react2.default.createElement(
 													'td',
 													null,
-													(0, _moment2.default)(forecast.time).format('H')
+													_moment2.default.utc(forecast.time).format('H')
 												),
 												_react2.default.createElement(
 													'td',
@@ -30633,7 +30633,7 @@
 											_react2.default.createElement(
 												'td',
 												null,
-												(0, _moment2.default)(forecast.daytime.time).format('MM/DD')
+												_moment2.default.utc(forecast.daytime.time).format('MM/DD')
 											),
 											_react2.default.createElement(
 												'td',

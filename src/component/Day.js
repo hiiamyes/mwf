@@ -25,7 +25,7 @@ class Day extends React.Component {
 								{ mountain.forecast.week.map(function(forecast){
 									return (
 										<tr>
-											<td>{moment(forecast.daytime.time).format('MM/DD')}</td>
+											<td>{moment.utc(forecast.daytime.time).format('MM/DD')}</td>
 											<td>
 												<img 
 													src={forecast.daytime.weather.img}
