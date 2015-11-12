@@ -2,6 +2,10 @@
 (function() {
   var Forecast, app, async, collectionName, crawler, db, env, express, forecastSchema, mongoose, port;
 
+  if (process.env.NODE_ENV === 'production') {
+    require('newrelic');
+  }
+
   env = process.env.NODE_ENV || 'dev';
 
   console.log(env + ' mode');
