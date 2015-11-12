@@ -9,7 +9,6 @@
     "babel-loader": "^6.0.1",
     "babel-preset-es2015": "^6.1.2",
     "babel-preset-react": "^6.1.2",
-    "newrelic": "^1.23.1",
     "react-hot-loader": "^1.3.0",
     "webpack": "^1.12.1"
   },
@@ -23,6 +22,7 @@
     "moment": "^2.10.6",
     "mongodb": "^2.0.43",
     "mongoose": "^4.1.8",
+    "newrelic": "^1.23.1",
     "radium": "^0.14.2",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
