@@ -18989,16 +18989,6 @@
 			value: function render() {
 
 				var mountain = this.props.mountain;
-				var offset = (0, _moment2.default)(mountain.forecast.hour[0][0].time).format('H') / 3;
-				for (var i = 0; i < offset; i++) {
-					mountain.forecast.hour[0].unshift({
-						time: (0, _moment2.default)(i * 3, 'HH').format(),
-						weather: {
-							img: '',
-							title: ''
-						}
-					});
-				};
 
 				if (Object.keys(mountain).length != 0) {
 					return _react2.default.createElement(
