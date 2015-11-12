@@ -21,6 +21,7 @@
   module.exports = {
     crawl: function(Forecast, db) {
       var crawlOnce;
+      moment().utcOffset(480);
       return (crawlOnce = function() {
         var j, len, mountain;
         console.log('crawling start');
@@ -61,7 +62,7 @@
                       }
                     }
                     forecastOneDay.push({
-                      time: moment($(this).text() + '+0800', 'HH:mm').add(dayAdd, 'd').format(),
+                      time: moment($(this).text(), 'HH:mm').add(dayAdd, 'd').format(),
                       weather: {
                         img: 'http://www.cwb.gov.tw' + $('tr:nth-child(3) td:nth-child(' + (i + 2) + ')').find('img').attr('src'),
                         title: $('tr:nth-child(3) td:nth-child(' + (i + 2) + ')').find('img').attr('title')
@@ -87,7 +88,7 @@
                   for (i = k = 0; k <= 6; i = ++k) {
                     forecasts.push({
                       daytime: {
-                        time: moment($('tr:nth-child(1) td:nth-child(' + (i + 2) + ')').text().split('星')[0] + '+0800', 'MM/DD').format(),
+                        time: moment($('tr:nth-child(1) td:nth-child(' + (i + 2) + ')').text().split('星')[0], 'MM/DD').format(),
                         weather: {
                           img: 'http://www.cwb.gov.tw' + $('tr:nth-child(3) td:nth-child(' + (2 * i + 2) + ')').find('img').attr('src'),
                           title: $('tr:nth-child(3) td:nth-child(' + (2 * i + 2) + ')').find('img').attr('title')
@@ -95,7 +96,7 @@
                         probabilityOfPrecipitation: $('tr:nth-child(9) td:nth-child(' + (2 * i + 2) + ')').text()
                       },
                       night: {
-                        time: moment($('tr:nth-child(1) td:nth-child(' + (i + 2) + ')').text().split('星')[0] + '+0800', 'MM/DD').format(),
+                        time: moment($('tr:nth-child(1) td:nth-child(' + (i + 2) + ')').text().split('星')[0], 'MM/DD').format(),
                         weather: {
                           img: 'http://www.cwb.gov.tw' + $('tr:nth-child(3) td:nth-child(' + (2 * i + 2) + ')').find('img').attr('src'),
                           title: $('tr:nth-child(3) td:nth-child(' + (2 * i + 3) + ')').find('img').attr('title')
