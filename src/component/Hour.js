@@ -16,7 +16,7 @@ class Hour extends React.Component {
 								<table style={{display: 'inline-block', verticalAlign: 'top'}}>
 									<thead>
 										<tr>
-											<th colSpan={3}>{moment(forecastOneDay[0].time).format('MM/DD')}</th>
+											<th colSpan={3}>{moment.utc(forecastOneDay[0].time).format('MM/DD')}</th>
 										</tr>
 										<tr>	
 											<th>時間</th>
@@ -28,7 +28,7 @@ class Hour extends React.Component {
 										{ forecastOneDay.map(function(forecast){
 											return (
 												<tr>
-													<td>{moment(forecast.time).format('H')}</td>
+													<td>{moment.utc(forecast.time).format('H')}</td>
 													<td>
 														<img 
 															src={forecast.weather.img}
