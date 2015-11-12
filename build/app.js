@@ -18988,6 +18988,8 @@
 			key: 'render',
 			value: function render() {
 
+				(0, _moment2.default)().utcOffset(0);
+
 				var mountain = this.props.mountain;
 
 				if (Object.keys(mountain).length != 0) {
@@ -30577,6 +30579,8 @@
 		_createClass(Day, [{
 			key: 'render',
 			value: function render() {
+
+				(0, _moment2.default)().utcOffset('+08:00');
 
 				var mountain = this.props.mountain;
 
