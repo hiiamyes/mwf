@@ -97,7 +97,7 @@
                       night: {
                         time: moment.utc($('tr:nth-child(1) td:nth-child(' + (i + 2) + ')').text().split('星')[0], 'MM/DD').format(),
                         weather: {
-                          img: 'http://www.cwb.gov.tw' + $('tr:nth-child(3) td:nth-child(' + (2 * i + 2) + ')').find('img').attr('src'),
+                          img: 'http://www.cwb.gov.tw' + $('tr:nth-child(3) td:nth-child(' + (2 * i + 3) + ')').find('img').attr('src'),
                           title: $('tr:nth-child(3) td:nth-child(' + (2 * i + 3) + ')').find('img').attr('title')
                         },
                         probabilityOfPrecipitation: $('tr:nth-child(9) td:nth-child(' + (2 * i + 3) + ')').text()
