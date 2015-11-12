@@ -108,9 +108,8 @@ module.exports = {
 							},
 							(err, raw) ->
 								if (err) then console.log 'crawling err: ' + err
-								console.log mountain.nameZh + ' crawling done'
+								console.log results.nameZh + ' crawling done'
 								# console.log('The raw response from Mongo was ', raw);
-								# mongoose.disconnect()
 						)
 				)
 
