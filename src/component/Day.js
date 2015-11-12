@@ -4,6 +4,8 @@ import moment from 'moment';
 class Day extends React.Component {
 	
 	render() {
+
+		moment().utcOffset('+08:00');
 		
 		var mountain = this.props.mountain;
 		
