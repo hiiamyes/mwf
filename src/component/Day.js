@@ -5,8 +5,6 @@ class Day extends React.Component {
 	
 	render() {
 
-		moment().utcOffset('+08:00');
-		
 		var mountain = this.props.mountain;
 		
 		if (Object.keys(mountain).length != 0) {

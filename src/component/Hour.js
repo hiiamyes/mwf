@@ -5,8 +5,6 @@ class Hour extends React.Component {
 	
 	render() {
 
-		moment().utcOffset(0);
-
 		var mountain = this.props.mountain;
 
 		if (Object.keys(mountain).length != 0) {
