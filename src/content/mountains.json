@@ -19,5 +19,75 @@
 			"week":[],
 			"hour":[]
 		}
-	}	
+	},{
+		"nameZh": "大武山",
+		"lat": 22.6269229,
+		"lng": 120.6911765,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D047.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D047.htm",
+			"week":[],
+			"hour":[]
+		}
+	},{
+		"nameZh": "三叉山",
+		"lat": 23.2971696,
+		"lng": 121.0111094,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D055.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D055.htm",
+			"week":[],
+			"hour":[]
+		}
+	},{
+		"nameZh": "奇萊主峰",
+		"lat": 24.0859844,
+		"lng": 121.2881395,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D015.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D015.htm",
+			"week":[],
+			"hour":[]
+		}
+	},{
+		"nameZh": "雪山主峰",
+		"lat": 24.3833316,
+		"lng": 121.2124474,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D078.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D078.htm",
+			"week":[],
+			"hour":[]
+		}
+	},{
+		"nameZh": "合歡山主峰",
+		"lat": 24.1426716,
+		"lng": 121.2694012,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D028.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D028.htm",
+			"week":[],
+			"hour":[]
+		}
+	},{
+		"nameZh": "南湖大山",
+		"lat": 24.3493408,
+		"lng": 121.376028,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D003.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D003.htm",
+			"week":[],
+			"hour":[]
+		}
+	},{
+		"nameZh": "東眼山",
+		"lat": 24.8251123,
+		"lng": 121.4000671,
+		"forecast": {
+			"urlHour": "http://www.cwb.gov.tw/V7/forecast/entertainment/3Hr/D140.htm",
+			"urlWeek": "http://www.cwb.gov.tw/V7/forecast/entertainment/7Day/D140.htm",
+			"week":[],
+			"hour":[]
+		}
+	}
 ]

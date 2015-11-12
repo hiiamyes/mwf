@@ -5,3 +5,5 @@ bower_components
  
 src/util/archive                                           
 build
+mwf.sublime-project
+mwf.sublime-workspace

@@ -123,7 +123,7 @@
                 if (err) {
                   console.log('crawling err: ' + err);
                 }
-                return console.log(mountain.nameZh + ' crawling done');
+                return console.log(results.nameZh + ' crawling done');
               });
             }
           });

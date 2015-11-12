@@ -1,3 +1,7 @@
+# New Relic
+if process.env.NODE_ENV is 'production' then require 'newrelic'
+
+# 
 env = process.env.NODE_ENV || 'dev'
 console.log env + ' mode' # production / dev
 collectionName = if env is 'production' then 'forecasts' else 'forecast_dev'
